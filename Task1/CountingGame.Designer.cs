@@ -29,6 +29,7 @@ namespace Task1
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CountingGame));
             this.lblText = new System.Windows.Forms.Label();
             this.tbxNumber = new System.Windows.Forms.TextBox();
             this.lblGuess = new System.Windows.Forms.Label();
@@ -39,6 +40,7 @@ namespace Task1
             // lblText
             // 
             this.lblText.AutoSize = true;
+            this.lblText.BackColor = System.Drawing.Color.Transparent;
             this.lblText.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lblText.Location = new System.Drawing.Point(22, 90);
             this.lblText.Name = "lblText";
@@ -56,6 +58,7 @@ namespace Task1
             // lblGuess
             // 
             this.lblGuess.AutoSize = true;
+            this.lblGuess.BackColor = System.Drawing.Color.Transparent;
             this.lblGuess.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lblGuess.Location = new System.Drawing.Point(31, 306);
             this.lblGuess.Name = "lblGuess";
@@ -66,6 +69,7 @@ namespace Task1
             // lblAnswer
             // 
             this.lblAnswer.AutoSize = true;
+            this.lblAnswer.BackColor = System.Drawing.Color.Transparent;
             this.lblAnswer.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lblAnswer.Location = new System.Drawing.Point(31, 359);
             this.lblAnswer.Name = "lblAnswer";
@@ -87,6 +91,7 @@ namespace Task1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.btnPrediction);
             this.Controls.Add(this.lblAnswer);
@@ -94,6 +99,7 @@ namespace Task1
             this.Controls.Add(this.tbxNumber);
             this.Controls.Add(this.lblText);
             this.Name = "CountingGame";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "CountingGame";
             this.Load += new System.EventHandler(this.CountingGame_Load);
             this.ResumeLayout(false);

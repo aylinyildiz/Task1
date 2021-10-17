@@ -343,6 +343,7 @@ namespace Task1
             this.Controls.Add(this.label1);
             this.Controls.Add(this.lblUnitConversion);
             this.Name = "UnitConversion";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "UnitConversition";
             this.Load += new System.EventHandler(this.UnitConversion_Load);
             this.gbxUnits.ResumeLayout(false);

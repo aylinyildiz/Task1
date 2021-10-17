@@ -66,6 +66,7 @@ namespace Task1
             this.Controls.Add(this.lblDay);
             this.Controls.Add(this.lblTime);
             this.Name = "Clock";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Clock";
             this.Load += new System.EventHandler(this.Clock_Load);
             this.ResumeLayout(false);

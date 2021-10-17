@@ -46,6 +46,7 @@ namespace Task1
             this.photoAlbum.TabIndex = 0;
             this.photoAlbum.Text = "Photo Album";
             this.photoAlbum.UseVisualStyleBackColor = false;
+            this.photoAlbum.Click += new System.EventHandler(this.photoAlbum_Click);
             // 
             // clock
             // 
@@ -89,6 +90,7 @@ namespace Task1
             this.Controls.Add(this.photoAlbum);
             this.ForeColor = System.Drawing.SystemColors.ControlText;
             this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.ResumeLayout(false);
 

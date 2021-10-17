@@ -34,6 +34,12 @@ namespace Task1
             UnitConversion unitConversion = new UnitConversion();
             unitConversion.ShowDialog();
         }
+
+        private void photoAlbum_Click(object sender, EventArgs e)
+        {
+            PhotoAlbum photoAlbum = new PhotoAlbum();
+            photoAlbum.ShowDialog();
+        }
     }
 }
 
